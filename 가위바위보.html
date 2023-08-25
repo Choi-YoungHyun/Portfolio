@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보게임(JavaScript)</title>
+</head>
+<body>
+    <h1>가위바위보 게임</h1>
+
+    <script>
+        let random = Math.random(['가위,바위,보'])
+        let a = 1
+        let com;
+
+        if (random < 0.33){
+            com = '가위'   
+        } else if (random < 0.66){
+            com = '바위'
+        } else if (random <0.99){
+            com = '보'
+        }
+
+        while (a){
+            let choice = prompt('가위,바위,보 중 1개 입력')
+            if (choice == com){
+                alert('비겼습니다.')
+
+            }else if ((choice == '가위' && com == '바위') || (choice == '바위' && com == '보') || (choice == '보' && com == '가위')){
+                alert('졌습니다.')
+
+            }else if ((choice == '가위' && com == '보') || (choice == '바위' && com == '가위') || (choice == '보' && com == '바위') ){
+                alert('이겼습니다. 프로그램 종료')
+                a=0
+                
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

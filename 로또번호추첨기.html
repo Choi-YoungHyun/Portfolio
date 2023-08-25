@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또번호 추첨기</title>
+</head>
+<body>
+
+
+<h2>로또번호 추첨기</h2>
+
+<p style="display: inline;"><b>이번주 로또번호</b></p>
+
+<script>
+    alert('로또번호 추첨을 시작하겠습니다.')
+    let lotto = [];
+    let num = 0;
+
+    for (let i=0; i<7; i++){
+        num =Math.floor(Math.random()*45 + 1)
+        if (!lotto.includes(num)){
+            lotto.push(num)
+        }
+    }
+    lotto.sort(function(a,b){return a - b;});
+
+    console.log(lotto)
+    document.write(lotto)
+</script>
+    
+</body>
+</html>
+

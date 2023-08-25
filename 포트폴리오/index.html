@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최영현 포트폴리오</title>
+    <meta name='auther' content='YoungHyun'>
+    <meta name='description' content="아르베야 발발이 치와와">
+    <link rel="icon" type='image/png' href="./images/hungry_icon.png">
+    <link rel="stylesheet" href="./style.css"> <!--css-->
+    <script src="./script.js" defer></script> <!--java-->
+    <script src="https://kit.fontawesome.com/133260cff9.js"></script>
+</head>
+
+<body>
+    <!--Nav Bar 시작-->
+    <nav id='navbar'>
+        <div class="navbar__logo">
+            <i class="fa-solid fa-face-smile"></i>
+            <a href="#">YoungHyun</a>
+        </div>
+        <div class="navbar_action">
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item home active" onclick="goToScroll('home')">HOME</li>
+                <li class="navbar__menu__item " onclick="goToScroll('about')">INTRODUCE</li>
+                <li class="navbar__menu__item" onclick="goToScroll('skills')">SKILL</li>
+                <li class="navbar__menu__item" onclick="goToScroll('work')">My PROJECT</li>
+                <li class="navbar__menu__item" onclick="goToScroll('testimonials')">RECOMMEND</li>
+                <li class="navbar__menu__item" onclick="goToScroll('contact')">CONTACT</li>
+            </ul>
+        </div>
+        <button class="navbar__toggle-btn"  onclick="Menu_active()">
+            <i class="fa-solid fa-burger"></i>
+        </button>
+    </nav>
+    <!--Nav Bar 끝-->
+    <!--홈 시작-->
+    <section id="home" class="section">
+        <div class="home__container">
+            <img src="./images/내사진.jpeg.jpg" alt="YoungHyun's photo" class="home__avatar" style="opacity: 0.5;">
+            <h1 class="home__title">안녕하세요 저는 최영현입니다.</h1>
+            <h2>환영합니다! </h2>
+            <button class="home__contact">연락주세요</button>
+
+        </div>
+    </section>
+    <!--홈 끝-->
+    <!--내소개 시작-->
+    <section id="about" class="section section_container"> <!--클래스 2개 정의-->
+        <h1>내소개</h1>
+        <p>
+            안녕하세요. 저는 최영현입니다. <br> 저는 의료경영학과,영어영문학과 복수전공을 하였고, KDT훈련과정을 통해 챗봇,OCR프로젝트를 진행중입니다. 자격증으로는 컴퓨터활용능력 2급,
+            2종보통면허가 있으며, MCF-AI-900 취득 예정입니다.
+        </p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fa-brands fa-square-js"></i>
+                </div>
+                <h2 class="major__title">프론트엔드</h2>
+                <div class="major__description">
+                    HTML CSS <br> Javascript 
+                </div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+                <h2 class="major__title">백엔드</h2>
+                <div class="major__description">
+                    Python <br> Node.js Django FastAPI
+                </div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <h2 class="major__title">인공지능</h2>
+                <div class="major__description">
+                    데이터분석 머신러닝 딥러닝 <br> Tensorflow Pytoch
+                </div>
+            </div>
+        </div>
+        <div class="about__jobs">
+            <div class="job">
+                <img src="./images/goodmedia.png" alt="" class='about__jobs__icon'>
+                <div class="job__description">
+                    <p class="job__name">
+                        영상장비 셋팅 및 현장 오퍼레이터
+                    </p>
+                    <p class="job__period">
+                        2019.12 ~ 2023. 02
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+    <!--내소개 끝-->
+
+    <!--기술 시작-->
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>기술</h1>
+            <p>저는 7개월차 코린이로써 프론트엔드부터 백엔드 AI까지 기초적인 분야를 공부하고 있습니다 <br> <br>아래의 그래프는 제 생각의 실력의 정도입니다</p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Language</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Javascript</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 20%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Python</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 50%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>DBMS</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 40%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>데이터분석</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 40%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>머신러닝 / 딥러닝</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 30%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillset_right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>Google - Colaboratory</span></li>
+                            <li><span>Pycham</span></li>
+                            <li><span>Jupyter Notebook</span></li>
+                            <li><span>Github Desktop</span></li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">Hobby</h3>
+                        <ul class="etc__list">
+                            <li><span>Soccer</span></li>
+                            <li><span>Exercise</span></li>
+                            <li><span>Drink</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--기술 끝-->
+    <!--프로젝트 시작-->
+    <section id="work" class="section">
+        <div class="section__container">
+            <h1>내 작업실</h1>
+            <h3>프로젝트</h3>
+            <div class="work__categories">
+                <button class="category__btn selected" onclick="ProjectButtonClick('project', this)">
+                    전체 <span class="category__count all__count"></span>
+                </button>
+                <button class="category__btn" onclick="ProjectButtonClick('front', this)">
+                    프론트엔드 <span class="category__count front__count"></span>
+                </button>
+                <button class="category__btn" onclick="ProjectButtonClick('back', this)">
+                    백엔드 <span class="category__count back__count"></span>
+                </button>
+                <button class="category__btn" onclick="ProjectButtonClick('ai', this)">
+                    인공지능 <span class="category__count ai__count"></span>
+                </button>
+            </div>
+            <div class="work__projects">
+                <a href="#" class="project front" target="_blank">
+                    <img src="../images/메디메이트.png" alt="유튜브 메인" class="project__img">
+                    <div class="project__description">
+                        <h3>메디메이트</h3>
+                        <span>약국,약품 검색 및 캘린더 기능</span>
+                    </div>
+                </a>
+                <a href="#" class="project front" target="_blank">
+                    <img src="../images/dmz.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>Digital MZ (DMZ)</h3>
+                        <span>자연어처리를 이용한 신조어 번역기</span>
+                    </div>
+                </a>
+                <a href="#" class="project front" target="_blank">
+                    <img src="./images/youtube_main.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>마켓컬리 클론코딩</h3>
+                        <span>싱싱한 채소는 시장에서~</span>
+                    </div>
+                </a>
+                <a href="#" class="project front" target="_blank">
+                    <img src="./images/youtube_main.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>배달의민족 클론 코딩</h3>
+                        <span>우리가 어떤 민족입니까?</span>
+                    </div>
+                </a>
+                <a href="#" class="project front" target="_blank">
+                    <img src="./images/youtube_main.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>유튜브 클론 코딩</h3>
+                        <span>조심 ! 유튜브와 너무 달라서</span>
+                    </div>
+                </a>
+                <a href="#" class="project front" target="_blank">
+                    <img src="./images/youtube_main.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>Cam을 통한 아바타 만들기</h3>
+                        <span>조심 ! 정말 진짜 누구세여?</span>
+                    </div>
+                </a>
+                <a href="#" class="project ai" target="_blank">
+                    <img src="./images/youtube_main.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>Cam을 통한 얼굴인식</h3>
+                        <span>조심 ! 인식이 너무 안돼</span>
+                    </div>
+                </a>
+                <a href="#" class="project ai" target="_blank">
+                    <img src="./images/carrot_market.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>유튜브 데이터 분석</h3>
+                        <span>조심 ! 유튜브와 너무 달라서</span>
+                    </div>
+                </a>
+                <a href="#" class="project back" target="_blank">
+                    <img src="./images/youtube_main.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>유튜브 크롤링</h3>
+                        <span>유튜브 영상과 제목</span>
+                    </div>
+                </a>
+                <a href="#" class="project ai" target="_blank">
+                    <img src="./images/youtube_main.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>자연어 처리 챗봇</h3>
+                        <span>조심 ! 사람인줄 알았음</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <!--프로젝트 끝-->
+    <!--추천서 시작-->
+    <section id="testimonials" class="section">
+        <div class="section__container">
+            <h1>추천서</h1>
+            <h3>이분들이 저보고 쓸만하네? 라고 했어요</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="./images/gpt.png" alt="chatGPT" class="testimonial__avatar">
+                    <div class="testimonial__speech-bubble">
+                        <p>최영현님은 저희 회사에서 프론트엔드 개발자로 일한 적이 있습니다. 그는 열정적이고, 창의적이며 뛰어난 문제 해결 능력을 갖추고 있습니다. 그의 커뮤니케이션 능력은 매우
+                            뛰어나며, 고객 및 팀원과의 관계를 유지하는데 큰 기여를 하였습니다.</p>
+                        <p class="name"><a href="#">Mr.ChatGPT</a></p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <img src="./images/gpt.png" alt="chatGPT" class="testimonial__avatar">
+                    <div class="testimonial__speech-bubble">
+                        <p>최영현님은 저희 프로젝트에서 우수한 작업을 수행했습니다. 항상 일을 할 때 최선을 다하고 팀원들과 협력하여 프로젝트를 성공적으로 완료하는 데 큰 도움을 주었습니다.
+                            코드가 깨끗하고 효율적이며, 다른 개발자에게도 도움이 되었습니다.</p>
+                        <p class="name"><a href="#">Mr.ChatGPT</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--추천서 끝-->
+    <!--Contact 시작-->
+    <section id="contact" class="section">
+        <h1 class="contact__title">연락처</h1>
+        <h2 class="contact__email">cyounghyun07@naver.com</h2>
+        <div id="contact__link">
+            <a href="https://www.instagram.com/o__young" target="_blank">
+                <img src="./images/insta.png" alt="">
+            </a>
+        </div>
+        <p class="contact__rights">
+            2023 YoungHyun - AII rights reserved
+        </p>
+    </section>
+    <!--Contact 끝-->
+    <button class="arrow-up" onclick="goToScroll('home')">
+        <i class="fa-solid fa-up-long"></i>
+    </button>
+</body>
+
+</html>

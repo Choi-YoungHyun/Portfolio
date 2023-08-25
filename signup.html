@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+    <style>
+        .phone {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        div.total {
+            width: 500px;
+            height: 850px;
+            border: 1px inset sandybrown;
+            text-align: left;
+            margin: auto;
+            background-image:url(./images/짱구회원가입.png) ;
+            background-repeat: no-repeat;
+            background-position: center; 
+            opacity: 1;
+            font-size: 19px;
+        
+        
+        }
+        h1 {text-align:center;}
+
+        input{
+            border: 3px outset darkorchid;
+            display: block;
+            width: auto;
+            text-align: center;
+            
+        }
+        label {display: inline-block;}
+        .gender {
+            border:3px outset darkorchid;
+            width: 170px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="total">
+        <h1>회원가입 페이지</h1>
+        <hr>
+        <form action="">
+            <p class="b">아이디 <input type="text" id="userid" class="input" maxlength="20" placeholder="아이디를 입력하세요."></p>
+            <p class="b">비밀번호 <input type="password" id="userpw" class="input" maxlength="20" placeholder="비밀번호를 입력하세요."></p>
+            <p class="b">비밀번호 재확인<input type="password" id="repw" class="input" maxlength="20" placeholder="비밀번호를 다시 입력하세요."></p>
+            <p class="b">이름 <input type="text" id="username" class="input" maxlength="20" placeholder="이름을 입력하세요."></p>
+    
+
+    
+        생년월일
+            <b>년(4자) <input type="number" maxlength="5"></b>
+            <select name="mm" id="mm">
+                <option value="">1월</option>
+                <option value="">2월</option>
+                <option value="">3월</option>
+                <option value="">4월</option>
+                <option value="">5월</option>
+                <option value="">6월</option>
+                <option value="">7월</option>
+                <option value="">8월</option>
+                <option value="">9월</option>
+                <option value="">10월</option>
+                <option value="">11월</option>
+                <option value="">12월</option>
+            </select>
+            <select name="dd" id="dd">
+                <option value="">1일</option>
+                <option value="">2일</option>
+                <option value="">3일</option>
+                <option value="">4일</option>
+                <option value="">5일</option>
+                <option value="">6일</option>
+                <option value="">7일</option>
+                <option value="">8일</option>
+                <option value="">9일</option>
+                <option value="">10일</option>
+                <option value="">11일</option>
+                <option value="">12일</option>
+                <option value="">13일</option>
+                <option value="">14일</option>
+                <option value="">15일</option>
+                <option value="">16일</option>
+                <option value="">17일</option>
+                <option value="">18일</option>
+                <option value="">19일</option>
+                <option value="">20일</option>
+                <option value="">21일</option>
+                <option value="">22일</option>
+                <option value="">23일</option>
+                <option value="">24일</option>
+                <option value="">25일</option>
+                <option value="">26일</option>
+                <option value="">27일</option>
+                <option value="">28일</option>
+                <option value="">29일</option>
+                <option value="">30일</option>
+                <option value="">31일</option>
+            </select>
+        <p>성별</p>
+            <div class="gender">
+            <label><input type="radio" name="gender">남자</label>
+            <label><input type="radio" name="gender">여자</label>
+            </div>
+        <p>본인 인증 이메일<b>(선택)</b></p>
+        <input type="text">
+        
+            <p>휴대전화</p>
+            <select style="display: block; width: 160px; margin-bottom: 10px;">
+                <option value="">대한민국 +82</option>
+                <option value="">미국 +1</option>
+                <option value="">러시아 +7</option>
+                <option value="">영국 +44</option>
+                <option value="">일본 +81</option>
+                <option value="">태국 +66</option>
+                <option value="">중국 +86</option>
+                <option value="">인도 +91</option>
+                <option value="">뉴질랜드 +64</option>
+                <option value="">독일 +49</option>
+            </select>
+        
+
+        <input type="text"  placeholder="전화번호 입력">
+        <button >인증번호 확인</button>
+        <input class="phone" type="text" placeholder="인증번호를 입력하세요.">
+    </div>
+    </p>
+
+    </select>
+    </form>
+
+</html>

@@ -1,0 +1,40 @@
+
+
+1. 모바일 상에서 햄버거 메뉴를 누르면 메뉴바가 뜨게 하기(형태 상관 없음)
+
+2. 각 메뉴를 누를때 슬라이딩 되어 해당 section으로 이동 
+(책갈피 말고)
+    -해당 메뉴가 선택되었다라는 표시하기 (메뉴에 보더 가있기)
+
+3. 프로젝트의 각 탭의 프로젝트 개수 표시
+    -탭을 누르면 해당 프로젝트만 표시하기(filter기능)
+
+
+4. 홈을 벗어나면 화살표 버튼이 활성화되고 화살표 버튼을 누르면 홈으로 이동
+
+5. 나머지 페이지가 부족한거 완성하기
+
+
+
+css
+    .navbar__menu.active{
+        position: relative;
+        margin: 0 auto;
+        flex-direction: none;
+        text-align: center;
+        width: 100%;
+        display: block; /*none 에서 block으로 보여주고*/
+    }
+    .navbar_action.active{
+        align-self: center;
+    }
+
+
+<ul class="navbar__menu"> <!-- goToScroll()메서드가 클릭 시 실행될 수 있도록 조정. class의 이름을 기준으로 이동. -->
+            <li class="navbar_menu_item active" onclick="goToScroll('home__container')">home</li> <!-- li에 active의 효과를 줌 -->
+            <li class="navbar_menu_item" onclick="goToScroll('section__introduce')">introduce</li>
+            <li class="navbar_menu_item" onclick="goToScroll('section__technic')">skill</li>
+            <li class="navbar_menu_item" onclick="goToScroll('section__project')">project</li>
+            <li class="navbar_menu_item" onclick="goToScroll('section__resume')">resume</li>
+            <li class="navbar_menu_item" onclick="goToScroll('section__contact')">contact me</li>
+        </ul>

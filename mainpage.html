@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단 레이아웃</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        h1 {
+            height: 80px;
+            border: 1px solid;
+            padding-top: 30px;
+            text-align: center;
+            font-family: 'Sunflower', sans-serif;
+            font-weight: 300;
+        }
+
+        h3 {
+            font-family: 'Sunflower', sans-serif;
+            font-weight: 500;
+            text-align: center;
+            display: inline-block;
+
+        }
+
+        h4 {
+            font-family: 'Sunflower', sans-serif;
+            font-weight: 500;
+            text-align: center;
+            font-size: large;
+        }
+
+        .a {
+            box-sizing: border-box;
+            width: 80%;
+            height: 500px;
+            border: 1px inset black;
+            color: black;
+            font-size: 36px;
+            font-family: 'Sunflower', sans-serif;
+            font-weight: 500;
+
+            text-align: center;
+
+            line-height: 350px;
+            
+
+            padding: 150px;
+            display: inline-block;
+            background-image: url(./images/바탕1.png);
+            background-size: cover;
+        }
+
+        .b {
+            float: right;
+            width: 19%;
+            height: 417px;
+            border: 1px solid black;
+            background-image: url(./images/짱구배경3.png) ;
+            background-size: 50%;
+            padding-top: 30px;
+            margin-bottom: 10px;
+
+
+        }
+
+        .c {
+            clear: both;
+            border: 1px solid black;
+            background-image: url(./images/짱구배경4.png);
+            background-size: cover;
+            
+            
+            
+        }
+
+        .c>img {
+            display: inline-block;
+        }
+
+        p {
+            padding: 5%;
+            -webkit-transform: rotate(10deg);
+            color:rgb(241, 235, 199);
+            text-shadow: 0 0 5px purple;
+        }
+
+        .b {
+            padding-bottom: 50px;
+
+        }
+
+        button {
+            background-color: aqua;
+            font-size: 25px;
+            border-radius: 40%;
+            font-family: 'Sunflower', sans-serif;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        .image {
+            width: 160px;
+            height: 90px;
+        }
+
+        #container{
+            width: 1000px;
+            margin:0 auto;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <h1>최영현 홈페이지</h1>
+            <a href="./signup.html"><button>회원가입 </button></a>
+            <a href="./signin.html"><button>로그인 </button></a>
+            <a href="https://oyounghyun.tistory.com/"><button>절대 누르지 마시오! </button></a>
+        </div>
+        <div class="a">
+            <p><b>어서오세요 환영합니다!</b></p>
+        </div>
+        <div class="b">
+            <h4>내가 무엇을 했을까요?</h4>
+            <ul>
+                <li><a href="./0327이력서.html"><button>이력서</button></a></li>
+                <li><a href="./news1.html"><button>0328 뉴스</button></a></li>
+                <li><a href="./0403당근마켓.html"><button>클론코딩</button></a></li>
+            </ul>
+        </div>
+        <div class="img">
+
+        </div>
+        <div class="c">
+            <span>
+            <h4 style="color: antiquewhite; font-size: 30px;">즐겨찾기</h4>
+            <h3><a href="https://www.naver.com"><img class="image" src="./images/네이버.PNG" alt="네이버로고"></a>네이버</h3>
+            <h3><a href="https://finance.naver.com/"><img class="image" src="./images/네이버증권.PNG"
+                        alt="네이버증권로고"></a>네이버증권</h3>
+            <h3><a href="https://www.google.com/"><img class="image" src="./images/구글.PNG" alt="네이버로고"></a>구글</h3>
+            <h3><a href="https://slack.com/intl/ko-kr/"><img class="image" src="./images/슬랙.PNG" alt="네이버로고"></a>슬랙
+            </span>
+
+            </h3>
+
+        </div>
+    </div>
+</body>
+
+</html>

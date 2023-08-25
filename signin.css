@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'KimjungchulMyungjo-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulMyungjo-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 670px;
+    height: 960px;
+    background: #FFFFFF;
+    border: 1px solid #AACDFF;
+    box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+    border-radius: 20px;
+    font-family: 'KimjungchulMyungjo-Bold';
+
+}
+
+
+body>h2 {
+    text-align: center;
+    font-family: 'KimjungchulMyungjo-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100px;
+
+    color: #0068FF;
+    justify-content: space-evenly;
+}
+
+p {
+    padding-left: 18%;
+    font-family: 'KimjungchulMyungjo-Bold';
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 20px;
+    color: #0068FF;
+    justify-content: space-evenly;
+}
+
+input {
+    border: none;
+    width: 20%;
+    border-bottom: 1px solid gray;
+
+}
+
+#userid {
+    box-sizing: border-box;
+    width: 20%;
+
+}
+
+#userpw {
+    box-sizing: border-box;
+    width: 18%;
+
+}
+
+form>p#end>button {
+    position: relative;
+    left: 300px;
+    background-color: #FFFFFF;
+    color: royalblue;
+    border-radius: 8px;
+    border: #0068FF solid 1px;
+}
+
+
+button {
+    background-color: #FFFFFF;
+    color: royalblue;
+    border-radius: 8px;
+    border: #0068FF solid 1px;
+    margin-left: 20px;
+
+}
